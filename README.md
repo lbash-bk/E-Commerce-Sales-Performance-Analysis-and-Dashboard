@@ -1,205 +1,271 @@
-# Retail Sales Performance Analysis
+ E-Commerce Sales Performance Analysis & Dashboard
 
-An end-to-end data analytics project analysing 5,000 retail transactions using Python and Microsoft Power BI to evaluate sales performance, customer purchasing behaviour, product category performance, and regional revenue.
+ 📊 Project Overview
 
-## Project Overview
+This project analyzes e-commerce sales data to understand overall sales performance, customer activity, product category performance, regional performance, payment methods, and sales trends over time.
 
-This project focuses on analysing retail sales data to uncover meaningful insights into business performance.
+The project follows a practical data analytics workflow, starting with raw sales data, followed by data cleaning and validation using Python and Pandas, exploratory analysis, and finally the development of an interactive Power BI dashboard.
 
-The analysis involved cleaning and preparing transaction data using Python, performing exploratory data analysis (EDA), calculating key performance indicators (KPIs), and developing an interactive Power BI dashboard.
+The goal was to transform raw transactional data into clear business insights that can support better decision-making.
 
-The goal was to understand revenue performance, identify top-performing product categories and regions, examine payment preferences, and provide insights that could support better business decisions.
 
-## Project Objectives
+## 🎯 Business Objective
 
-- Evaluate overall sales and revenue performance.
-- Analyse monthly sales trends.
-- Identify top-performing product categories.
-- Compare revenue performance across regions.
-- Examine customer purchasing behaviour.
-- Analyse payment method preferences.
-- Investigate factors associated with revenue.
-- Build an interactive Power BI dashboard.
-- Communicate findings through actionable business insights.
+The main objective of this project was to answer key business questions such as:
 
-## Tools and Technologies
-
-| Tool | Purpose |
-|---|---|
-| Python | Data cleaning and analysis |
-| Pandas | Data manipulation and analysis |
-| NumPy | Numerical operations |
-| Jupyter Notebook | Exploratory data analysis |
-| Microsoft Power BI | Dashboard development |
-| DAX | KPI calculations and measures |
-
-## Dataset Description
-
-The project used a retail/e-commerce transaction dataset containing **5,000 orders**.
-
-Important dataset columns included:
-
-| Column | Description |
-|---|---|
-| order_id | Unique order identifier |
-| order_date | Date of transaction |
-| customer_id | Customer identifier |
-| product_category | Category of purchased product |
-| region | Sales region |
-| quantity | Number of units purchased |
-| unit_price | Price per unit |
-| discount | Discount applied |
-| payment_method | Payment method used |
-| delivery_days | Number of days taken for delivery |
-| customer_rating | Customer rating |
-| revenue | Revenue generated from the transaction |
-
-## Data Cleaning and Preparation
-
-Python and Pandas were used to prepare the dataset for analysis.
-
-The preparation process included:
-
-1. Loading and inspecting the dataset.
-2. Examining dataset dimensions, column names, and data types.
-3. Checking for missing values and duplicate records.
-4. Handling data quality issues.
-5. Converting date and numerical columns into appropriate data types.
-6. Validating numerical values and sales calculations.
-7. Preparing the cleaned dataset for exploratory analysis.
-8. Exporting the processed data for Power BI.
-
-## Exploratory Data Analysis
-
-The analysis focused on understanding sales performance and customer behaviour.
-
-### 1. Sales Performance Analysis
-
-Examined total revenue, order volume, and average order value to understand the overall performance of the business.
-
-### 2. Product Category Analysis
-
-Compared revenue and sales volume across product categories to identify the strongest contributors to business performance.
-
-### 3. Regional Analysis
-
-Investigated revenue performance across different sales regions to identify high-performing and lower-performing markets.
-
-### 4. Payment Method Analysis
-
-Examined customer payment preferences and compared transaction volumes across payment methods.
-
-### 5. Customer Analysis
-
-Investigated customer purchasing behaviour, including repeat purchasing patterns.
-
-### 6. Correlation Analysis
-
-Examined relationships between numerical variables and revenue.
-
-Notable correlation results included:
-
-| Variable | Correlation with Revenue |
-|---|---:|
-| Unit Price | +0.678 |
-| Quantity | +0.624 |
-| Discount | -0.139 |
-| Delivery Days | -0.0177 |
-| Customer Rating | -0.0177 |
-
-These values indicate that unit price and quantity had the strongest positive linear relationships with revenue among the variables examined. Correlation does not establish causation.
-
-## Key Performance Indicators (KPIs)
-
-The analysis produced the following results:
-
-| KPI | Result |
-|---|---:|
-| Total Revenue | 5,109,775.74 |
-| Total Orders | 5,000 |
-| Total Customers | 989 |
-| Average Order Value | 1,021.96 |
-| Repeat Customers | 950 |
-
-## Key Findings
-
-1. **Overall revenue:** The business generated total revenue of 5,109,775.74 across 5,000 orders.
-
-2. **Average order value:** The average revenue per order was approximately 1,021.96.
-
-3. **Top-performing category:** Electronics generated the highest revenue, contributing 1,829,899.22, with 7,109 units sold.
-
-4. **Regional performance:** The West region recorded the highest revenue at 1,345,582.16.
-
-5. **Payment preferences:** Card payments recorded the highest transaction volume, with 2,270 orders.
-
-6. **Customer retention pattern:** 950 out of 989 customers made repeat purchases, indicating a high level of repeat purchasing in the dataset.
-
-7. **Revenue relationships:** Unit price and quantity had the strongest positive correlations with revenue among the numerical variables examined.
-
-## Power BI Dashboard
-
-An interactive dashboard was developed in Microsoft Power BI to present the major findings.
-
-The dashboard included:
-
-- Total Revenue
-- Total Orders
-- Total Customers
-- Average Order Value
-- Monthly Revenue Trends
-- Revenue by Product Category
-- Revenue by Region
-- Orders by Payment Method
-
-The dashboard was designed to provide a clear overview of sales performance and allow users to explore different aspects of the business.
-
-**Dashboard screenshots:**
-
-Add your dashboard screenshots to a `screenshots` folder and reference them below.
-
-![Retail Sales Dashboard](screenshots/retail_sales_dashboard.png)
-
-## Business Insights and Recommendations
-
-Based on the analysis, the following recommendations were identified:
-
-### 1. Strengthen Electronics Sales
-
-Electronics was the highest revenue-generating category. The business could investigate opportunities to maintain its performance through product availability, promotions, and effective inventory planning.
-
-### 2. Investigate Regional Performance
-
-The West region recorded the highest revenue. The business should examine the factors contributing to its performance and identify opportunities to apply successful strategies in other regions.
-
-### 3. Maintain Customer Relationships
-
-The high number of repeat customers suggests an opportunity to strengthen customer loyalty through personalized offers, customer engagement, and improved shopping experiences.
-
-### 4. Monitor Payment Preferences
-
-Card payments accounted for the largest number of orders. The business should continue supporting convenient payment methods while monitoring changes in customer preferences.
-
-### 5. Monitor Revenue Drivers
-
-Unit price and quantity showed strong positive correlations with revenue. The business should monitor product pricing, sales volume, and product mix when evaluating revenue performance.
-
-## Conclusion
-
-This project demonstrated the use of Python and Microsoft Power BI to transform retail transaction data into meaningful business insights.
-
-Through data cleaning, exploratory data analysis, KPI calculations, and interactive visualization, the project provided an overview of revenue performance, product category contributions, regional sales, payment preferences, and customer purchasing behaviour.
-
-The findings highlighted Electronics as the leading revenue-generating category, the West as the highest-performing region, and repeat purchasing as an important feature of the customer base.
-
-Overall, the project strengthened practical skills in Python, Pandas, data cleaning, exploratory data analysis, descriptive statistics, correlation analysis, Power BI, DAX, and business insight communication.
+- How much revenue was generated?
+- How many orders were placed?
+- What is the average order value?
+- How many unique customers are represented in the data?
+- Which product category generates the most revenue?
+- Which region performs best?
+- Which payment method is most commonly used?
+- How does revenue change over time?
+- What relationships exist between pricing, quantity, discounts, delivery time, and other performance indicators?
+- What insights and business actions can be derived from the analysis?
 
 ---
 
-**Project Category:** Data Analytics
+## 📁 Dataset
 
-**Dataset Size:** 5,000 orders
+The dataset contains **5,000 e-commerce sales transactions** with information about orders, customers, products, pricing, discounts, payments, delivery, ratings, and revenue.
 
-**Tools:** Python, Pandas, NumPy, Jupyter Notebook, Microsoft Power BI, DAX
+### Original Columns
 
-**Deliverable:** Interactive Power BI Sales Performance Dashboard
+| Column | Description |
+|---|---|
+| `order_id` | Unique identifier for each order |
+| `order_date` | Date the order was placed |
+| `customer_id` | Customer identifier |
+| `product_category` | Product category |
+| `region` | Customer/order region |
+| `quantity` | Number of units purchased |
+| `unit_price` | Price per unit |
+| `discount` | Discount applied to the order |
+| `payment_method` | Payment method used |
+| `delivery_days` | Number of days required for delivery |
+| `customer_rating` | Customer rating |
+| `revenue` | Revenue generated from the order |
+
+The dataset was used as a practical portfolio dataset to simulate a real-world e-commerce analytics scenario.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Jupyter Notebook**
+- **Power BI**
+- **GitHub**
+
+---
+
+## 🔄 Data Analysis Workflow
+
+The project followed these main stages:
+
+### 1. Data Inspection
+
+The raw dataset was inspected to understand:
+
+- Number of rows and columns
+- Data types
+- Missing values
+- Duplicate records
+- Unique values
+- Numerical ranges
+- Categorical values
+- Potential data quality issues
+
+The dataset contained **5,000 rows and 12 original columns**.
+
+---
+
+### 2. Data Cleaning
+
+Python and Pandas were used to prepare the data for analysis.
+
+The cleaning process included:
+
+- Checking for missing values
+- Checking for duplicate records
+- Checking for duplicate `order_id` values
+- Standardizing categorical values
+- Converting `order_date` into a proper datetime format
+- Validating numerical fields
+- Checking discount values
+- Checking customer ratings
+- Checking delivery days
+- Validating revenue calculations
+
+---
+
+### 3. Data Validation
+
+Revenue was independently recalculated using:
+
+Quantity × Unit Price × (1 − Discount)
+The calculated revenue was compared with the original revenue column.
+The difference was within approximately ±0.005, indicating that the small differences were caused by rounding rather than a significant calculation issue.
+Temporary validation columns were removed after the check.
+4. Feature Engineering
+Additional columns were created to support the analysis:
+•	year
+•	month
+•	month_name
+•	discount_amount
+•	gross_sales
+These additional fields made it easier to analyze sales trends, discounts, and gross versus net sales.
+📈 Exploratory Data Analysis
+Several areas of the dataset were analyzed.
+Overall Sales Performance
+Key metrics from the dataset:
+Metric	Result
+Total Revenue	5,109,775.74
+Total Orders	5,000
+Average Order Value	1,021.96
+Unique Customers	989
+Total Quantity Sold	20,224
+Gross Sales	6,240,021.96
+Discount Amount	1,130,246.08
+Product Category Performance
+Product categories were compared based on:
+•	Revenue
+•	Number of orders
+•	Units sold
+•	Average order value
+Electronics generated the highest revenue among the product categories and also recorded the highest order volume and unit sales in this dataset.
+Electronics generated approximately 36% of total revenue.
+Regional Performance
+The four regions were compared based on revenue, orders, units sold, and average order value.
+The West recorded the highest:
+•	Revenue
+•	Number of orders
+•	Units sold
+The West generated approximately 26% of total revenue.
+Payment Method Analysis
+The dataset contains three payment methods:
+•	Card
+•	Cash on Delivery (COD)
+•	Wallet
+Card recorded the highest number of orders and the highest revenue among the payment methods.
+Card transactions represented approximately 46% of total revenue.
+Customer Analysis
+The dataset contains 989 unique customers.
+Customer purchasing behavior was examined by grouping orders and revenue by customer.
+The analysis found that:
+•	950 customers placed more than one order.
+•	39 customers placed only one order.
+•	Approximately 96.1% of customers were repeat customers within this dataset.
+This indicates a high level of repeat purchasing activity in the dataset.
+Relationship Analysis
+Correlation analysis was used to explore relationships between numerical variables.
+The strongest observed relationships with revenue were:
+Variable	Correlation with Revenue
+Unit Price	0.678
+Quantity	0.624
+Discount	-0.139
+Unit price and quantity showed the strongest positive linear relationships with revenue.
+Discount showed a weak negative linear relationship with revenue.
+These correlations describe relationships in the dataset and should not be interpreted as proof of causation.
+Delivery Time & Customer Rating
+The relationship between delivery time and customer rating was also examined.
+The Pearson correlation was approximately:
+-0.018
+This indicates almost no linear relationship between delivery time and customer rating in this dataset.
+Therefore, other factors may be more relevant when investigating customer satisfaction.
+📊 Power BI Dashboard
+An interactive Power BI dashboard was created to provide a visual overview of the sales performance.
+Dashboard Components
+The dashboard includes:
+•	Total Revenue
+•	Total Orders
+•	Average Order Value
+•	Unique Customers
+•	Monthly Revenue Trend
+•	Revenue by Product Category
+•	Revenue by Region
+•	Revenue by Payment Method
+•	Key Business Insights
+Dashboard Preview
+Add a screenshot of the final dashboard to the images folder and name it:
+dashboard.png
+Then this image can be displayed here:
+💡 Key Insights
+1. Overall Sales Performance
+The dataset generated approximately 5.11 million in revenue across 5,000 orders, with an average order value of approximately 1,021.96.
+This provides a high-level view of the overall sales performance represented in the dataset.
+2. Electronics Was the Leading Category
+Electronics generated the highest category revenue and also recorded the highest order volume and unit sales.
+This makes Electronics an important category for further product-level analysis.
+3. The West Was the Leading Region
+The West recorded the highest revenue, order volume, and unit sales among the four regions.
+Further analysis could investigate the products, customers, and purchasing patterns contributing to this performance.
+4. Card Was the Dominant Payment Method
+Card recorded the highest number of transactions and generated the highest revenue among the payment methods.
+This suggests that card transactions represent an important part of the sales activity in the dataset.
+5. High Repeat Customer Activity
+Approximately 96.1% of customers placed more than one order in the dataset.
+This provides an opportunity to further investigate customer purchasing frequency, customer lifetime value, and retention patterns.
+6. Pricing and Quantity Were Strongly Associated with Revenue
+Unit price and quantity had the strongest positive correlations with revenue.
+Because revenue is mathematically calculated using both quantity and price, these relationships are expected and should not automatically be interpreted as causal business effects.
+7. Delivery Time Had Almost No Linear Relationship with Ratings
+The correlation between delivery time and customer rating was approximately -0.018, indicating almost no linear relationship in this dataset.
+Other factors should therefore be investigated when analyzing customer satisfaction.
+📌 Business Recommendations
+Based on the analysis, the following areas could be investigated further:
+Product Performance
+Analyze individual products within the Electronics category to identify high-performing and underperforming products.
+Regional Strategy
+Investigate the factors contributing to stronger performance in the West, including product mix, customer behavior, and order volume.
+Customer Retention
+Since the dataset contains a high proportion of repeat customers, further analysis could examine purchasing frequency, customer lifetime value, and customer segments.
+Pricing & Discount Strategy
+Analyze how different price points and discount levels are associated with order value and revenue before making pricing decisions.
+Payment Experience
+Monitor payment-method performance and investigate whether different payment methods are associated with differences in order value, customer behavior, or transaction volume.
+Customer Satisfaction
+Since delivery time showed almost no linear relationship with ratings, investigate other variables such as product category, order value, payment method, or customer history.
+📂 Project Structure
+E-Commerce-Sales-Performance-Analysis/
+│
+├── data/
+│   ├── ecommerce_sales_analytics_5000.csv
+│   └── ecommerce_sales_cleaned.csv
+│
+├── notebooks/
+│   └── ecommerce_sales_analysis.ipynb
+│
+├── dashboard/
+│   └── Ecommerce_Sales_Performance_Analysis.pbix
+│
+├── images/
+│   └── dashboard.png
+│
+└── README.md
+🚀 Skills Demonstrated
+This project demonstrates practical experience in:
+•	Data cleaning
+•	Data validation
+•	Exploratory data analysis
+•	Feature engineering
+•	Data aggregation
+•	Group-by analysis
+•	Correlation analysis
+•	Business insight generation
+•	Data visualization
+•	Dashboard development
+•	Power BI reporting
+•	Communicating analytical findings
+•	Translating data into business recommendations
+📌 Project Outcome
+The project transformed raw e-commerce transaction data into a cleaned analytical dataset and an interactive Power BI dashboard.
+The analysis provides a structured view of:
+Sales → Customers → Products → Regions → Payments → Trends → Insights
+The project demonstrates an end-to-end approach to turning raw data into information that can support business analysis and decision-making.
+👤 Author
+Bashir Lawan Isyaku
+Data Analyst | Python | SQL | Excel | Power BI
